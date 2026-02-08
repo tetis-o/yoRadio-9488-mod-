@@ -14,19 +14,13 @@ https://trip5.github.io/yoradio-docs/docs/myoptions-generator.html?b=ESP32-S3-De
 #define EXT_WEATHER       false     /*  Расширенная погода. По умолчанию "true"  */
 //#define CLOCKFONT_MONO    false     /* Откл/Вкл моношрифтов для часов TFT дисплеев. По умолчанию "true"  */
 #define RSSI_DIGIT        true      /* Графический/цифровой значок Wi-Fi. (false - лесенка, true - цифирьки) */
-//#define BITRATE_FULL      true     /* Значек битрейта. По умолчанию "true" */ 
 #define L10N_LANGUAGE RU    /*  Language (EN, RU). More info in yoRadio/locale/displayL10n_(en|ru).h*/
 //#define DEF_SPI_FREQ        80000000UL
+
 /* Display */
-//#define DSP_MODEL    DSP_ST7735  /* Select ST7735*/
-//#define DTYPE     INITR_GREENTAB  /*  ST7735 display submodel. По умолчанию "INITR_BLACKTAB" */
-//#define DSP_MODEL    DSP_ILI9341 /* Select ILI9341*/
-//#define DSP_MODEL   DSP_ST7789  /* Select ST7789*/
-//#define DSP_MODEL   DSP_ST7789_170  /* Select ST7789x170*/
+
 #define DSP_MODEL    DSP_ILI9488 /* Select ILI9488*/
-//#define DSP_MODEL    DSP_ST7796 /* Select ILI9486*/
-//#define DSP_MODEL    DSP_SSD1306x32    /* Select SSD1306-128х32*/
-//#define DSP_MODEL    DSP_SH1106    /* Select SH1106-128х64*/
+
 /* **************************************** */
 
 /* TFT */
@@ -34,7 +28,6 @@ https://trip5.github.io/yoradio-docs/docs/myoptions-generator.html?b=ESP32-S3-De
 #define TFT_RST         -1    /* SPI RST pin. (-1 if connect to EN) */
 #define TFT_DC           10    /* (FSPI HD)         can be DC, RS */
 //#define BRIGHTNESS_PIN  14    /* (FSPI WP)    can be BLK, BL - Pin for brightness (output 0 - 3v3) */
-//#define DEF_SPI_FREQ        80000000UL    /* Частота SPI для дисплея (80 МГц) */
 
 					/* Connect TFT_MOSI  to pin  11     (FSPI D)      can be SDA, DIN, SDI */
 					/* Connect TFT_SCLK  to pin  12     (FSPI CLK)   can be SCL, SCK, CLK */
@@ -103,15 +96,8 @@ https://trip5.github.io/yoradio-docs/docs/myoptions-generator.html?b=ESP32-S3-De
 //#define DOWN_INTERVAL        60     /* interval for BacklightDown in sec (60 sec = 1 min, default "60"). (МОД Maleksm) */
 /* ***************************************** */
 
-/*  Аккумулятор */
-//#define BATTERY_OFF         /*  Выключить показатель уровня заряда и напряжения аккумулятора */
-//#define HIDE_VOLT             /*  Скрыть только показатель напряжения аккумулятора */
-//#define ADC_PIN     1          /*  (или GPIO2) для считывания с делителя напряжения аккумулятора. По умолчанию GPIO1.  */
-//#define R1               39      /*  Номинал резистора, подключенного к плюсу батареи, в КОм или Ом. По умолчанию 50.  */
-//#define R2               98.9      /*  Номинал резистора, подключенного к минусу, в КОм  или Ом. По умолчанию 100. */
-//#define DELTA_BAT       -0.04   /*  Величина коррекции показаний напряжения батареи в вольтах */
-/* *********** ****************************** */
-//#define GRND_HEIGHT     231     /* (231 м) Высота местности над уровнем моря в метрах для поправки в давление */
+
+
 
 /*  IR control  */
 //#define IR_PIN               1
@@ -119,10 +105,6 @@ https://trip5.github.io/yoradio-docs/docs/myoptions-generator.html?b=ESP32-S3-De
                    /*  https://github.com/crankyoldgit/IRremoteESP8266/blob/master/examples/IRrecvDumpV2/IRrecvDumpV2.ino */
 /******************************************/
 
-/*  RTC control  */
-//#define RTC_MODULE    DS3231  /* или DS1307  */
-//#define RTC_SDA       7    /* 47 */
-//#define RTC_SCL       8    /* 48 */
-/* **************************************** */
+
 
 #endif
